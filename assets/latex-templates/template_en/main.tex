@@ -1,0 +1,106 @@
+% ============================================================
+% Mathematical Modeling Contest Paper Template (English)
+%
+% Compile: xelatex + bibtex
+%   cd writer && xelatex main && bibtex main && xelatex main && xelatex main
+%
+% Structure: organized by sub-problem.
+% 03-q1.tex is a skeleton for Problem 1.
+% Writer creates 04-q2.tex, 05-q3.tex, etc. as needed.
+% ============================================================
+\documentclass[12pt,a4paper]{article}
+
+% ---- Math ----
+\usepackage{amsmath,amssymb,amsfonts}
+
+% ---- Figures & Tables ----
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+
+% ---- Bibliography ----
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{plainnat}
+
+% ---- Page Layout ----
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,headheight=14pt]{geometry}
+
+% ---- Header & Footer ----
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\small Mathematical Modeling Contest Paper}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ---- Code Listings ----
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+  basicstyle=\small\ttfamily,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red!70!black},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=8pt,
+  frame=single,
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+  showstringspaces=false,
+  captionpos=b,
+}
+
+% ---- Hyperlinks ----
+\usepackage[colorlinks=true,linkcolor=blue!70!black,citecolor=green!50!black,urlcolor=blue!80!black]{hyperref}
+
+% ---- Other ----
+\usepackage{enumitem}
+\usepackage{caption}
+
+% ---- Title ----
+% Writer must replace this with a specific title based on the problem
+\title{\textbf{(Set a specific title based on the problem)}}
+\author{Team \#XXXXX}
+\date{}
+
+% ============================================================
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\input{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+% === Body sections ===
+\input{01-introduction}
+\input{02-assumptions}
+
+% === Per-problem chapters ===
+% Each sub-problem gets its own file with: Model -> Solution -> Results
+\input{03-q1}
+% Writer creates additional files as needed:
+% \input{04-q2}
+% \input{05-q3}
+
+% === Cross-cutting analysis ===
+\input{sensitivity}
+\input{strengths}
+\input{conclusions}
+
+% === References ===
+\bibliography{references}
+
+% === Appendix ===
+\appendix
+\input{appendix}
+
+\end{document}

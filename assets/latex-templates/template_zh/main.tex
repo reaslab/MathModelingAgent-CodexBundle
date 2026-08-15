@@ -1,0 +1,120 @@
+% ============================================================
+% 数学建模竞赛论文模板（中文）
+% Mathematical Modeling Contest Paper Template (Chinese)
+%
+% 编译方式: xelatex + bibtex
+%   cd writer && xelatex main && bibtex main && xelatex main && xelatex main
+%
+% 章节文件结构：以"问题"为核心组织。
+% 模板中 03-q1.tex 是问题一的骨架示例。
+% Writer 根据题目的子问题数量自行创建 04-q2.tex、05-q3.tex 等文件。
+% ============================================================
+\documentclass[12pt,a4paper,fontset=none]{ctexart}
+
+% ---- 中文字体 ----
+% 模板自带 Fandol 字体，避免依赖线上系统字体。必须使用 xelatex 编译。
+\setCJKmainfont[
+  Path = fonts/,
+  BoldFont = FandolSong-Bold.otf
+]{FandolSong-Regular.otf}
+\setCJKsansfont[
+  Path = fonts/,
+  BoldFont = FandolHei-Bold.otf
+]{FandolHei-Regular.otf}
+\setCJKmonofont[
+  Path = fonts/
+]{FandolFang-Regular.otf}
+
+% ---- 数学 ----
+\usepackage{amsmath,amssymb,amsfonts}
+
+% ---- 图表 ----
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+
+% ---- 参考文献 ----
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{plainnat}
+
+% ---- 页面布局 ----
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,headheight=14pt]{geometry}
+
+% ---- 页眉页脚 ----
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\small 数学建模竞赛论文}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ---- 代码 ----
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+  basicstyle=\small\ttfamily,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red!70!black},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=8pt,
+  frame=single,
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+  showstringspaces=false,
+  captionpos=b,
+}
+
+% ---- 超链接 ----
+\usepackage[colorlinks=true,linkcolor=blue!70!black,citecolor=green!50!black,urlcolor=blue!80!black]{hyperref}
+
+% ---- 其他 ----
+\usepackage{enumitem}
+\usepackage{caption}
+
+% ---- 标题信息 ----
+% Writer 必须根据题目内容修改标题，不要保留此占位符
+\title{\textbf{（请根据题目内容设定具体标题）}}
+\author{}
+\date{}
+
+% ============================================================
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\input{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+% === 正文章节 ===
+\input{01-restatement}
+\input{02-assumptions}
+
+% === 按问题组织的核心章节 ===
+% 每个子问题一个独立文件，包含：问题分析→模型建立→模型求解→结果分析
+\input{03-q1}
+% Writer 根据题目子问题数量自行添加：
+% \input{04-q2}
+% \input{05-q3}
+% \input{06-q4}
+
+% === 模型评价 ===
+\input{evaluation}
+
+% === 参考文献 ===
+\bibliography{references}
+
+% === 附录 ===
+\appendix
+\input{appendix}
+
+\end{document}
