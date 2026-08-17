@@ -2,7 +2,7 @@
 
 一个在本地 Codex 中运行的数学建模智能体，可以从读取题目开始，完成建模、计算、绘图、论文写作和最终检查。
 
-最后更新：**2026-08-12**
+最后更新：**2026-08-17**
 
 ## 开始使用
 
@@ -138,6 +138,25 @@ mma/<任务名称>/
 **网络不可用或 HMML 模型无法下载**
 
 Codex 会禁用 HMML 并继续建模。需要 HMML 时，可以等网络恢复后要求重新检查。
+
+## 贡献者
+
+感谢以下贡献者对本项目的投入：
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/rc314159-creator"><img src="https://github.com/rc314159-creator.png?size=96" width="80" alt="Ren Can"><br><sub><b>Ren Can</b></sub><br><sub>@rc314159-creator</sub></a></td>
+    <td align="center"><a href="https://github.com/sillyDaibo"><img src="https://github.com/sillyDaibo.png?size=96" width="80" alt="Li Daibo"><br><sub><b>Li Daibo</b></sub><br><sub>@sillyDaibo</sub></a></td>
+    <td align="center"><a href="https://github.com/TraFifholz"><img src="https://github.com/TraFifholz.png?size=96" width="80" alt="Zheng Libin"><br><sub><b>Zheng Libin</b></sub><br><sub>@TraFifholz</sub></a></td>
+    <td align="center"><a href="https://github.com/Yuhaooou"><img src="https://github.com/Yuhaooou.png?size=96" width="80" alt="Jiang Yuhao"><br><sub><b>Jiang Yuhao</b></sub><br><sub>@Yuhaooou</sub></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/tianming23"><img src="https://github.com/tianming23.png?size=96" width="80" alt="Huang Hao"><br><sub><b>Huang Hao</b></sub><br><sub>@tianming23</sub></a></td>
+    <td align="center"><a href="https://github.com/xinyuuu9"><img src="https://github.com/xinyuuu9.png?size=96" width="80" alt="Chen Xinyu"><br><sub><b>Chen Xinyu</b></sub><br><sub>@xinyuuu9</sub></a></td>
+    <td align="center"><a href="https://github.com/Iiceee"><img src="https://github.com/Iiceee.png?size=96" width="80" alt="Xia Shumeng"><br><sub><b>Xia Shumeng</b></sub><br><sub>@Iiceee</sub></a></td>
+    <td align="center"><a href="https://github.com/glhglhglh6"><img src="https://github.com/glhglhglh6.png?size=96" width="80" alt="Guo Luhong"><br><sub><b>Guo Luhong</b></sub><br><sub>@glhglhglh6</sub></a></td>
+  </tr>
+</table>
 
 ## 来源与许可证
 
