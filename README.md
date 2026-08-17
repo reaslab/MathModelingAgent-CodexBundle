@@ -141,11 +141,10 @@ Codex 会禁用 HMML 并继续建模。需要 HMML 时，可以等网络恢复�
 
 ## 贡献者
 
-感谢以下贡献者对本项目的投入：
-
 <table>
   <tr>
     <td align="center"><a href="https://github.com/rc314159-creator"><img src="https://github.com/rc314159-creator.png?size=96" width="80" alt="Ren Can"><br><sub><b>Ren Can</b></sub><br><sub>@rc314159-creator</sub></a></td>
+    <td align="center"><a href="https://github.com/optsuite"><img src="https://github.com/optsuite.png?size=96" width="80" alt="Wen Zaiwen"><br><sub><b>Wen Zaiwen</b></sub><br><sub>@optsuite</sub></a></td>
     <td align="center"><a href="https://github.com/sillyDaibo"><img src="https://github.com/sillyDaibo.png?size=96" width="80" alt="Li Daibo"><br><sub><b>Li Daibo</b></sub><br><sub>@sillyDaibo</sub></a></td>
     <td align="center"><a href="https://github.com/TraFifholz"><img src="https://github.com/TraFifholz.png?size=96" width="80" alt="Zheng Libin"><br><sub><b>Zheng Libin</b></sub><br><sub>@TraFifholz</sub></a></td>
     <td align="center"><a href="https://github.com/Yuhaooou"><img src="https://github.com/Yuhaooou.png?size=96" width="80" alt="Jiang Yuhao"><br><sub><b>Jiang Yuhao</b></sub><br><sub>@Yuhaooou</sub></a></td>
